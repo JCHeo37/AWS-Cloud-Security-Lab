@@ -1,15 +1,30 @@
-# AWS credentials and local configuration
-.aws/
-credentials
-config
+# AWS CLI credentials and local configuration
+/.aws/
+
+# Private keys and certificates
 *.pem
 *.key
+*.p12
+*.pfx
 
-# Environment secrets
+# Environment-variable secrets
 .env
 .env.*
 !.env.example
 
-# Sensitive exports
+# Terraform local files and state
+/.terraform/
 *.tfstate
 *.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+
+# Local logs and temporary files
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
