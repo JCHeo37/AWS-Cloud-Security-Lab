@@ -1,0 +1,15 @@
+# AWS credentials and local configuration
+.aws/
+credentials
+config
+*.pem
+*.key
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Sensitive exports
+*.tfstate
+*.tfstate.*
