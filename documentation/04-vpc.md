@@ -24,3 +24,5 @@ c.	Stateless NACLs need an inbound allow for ports 1024-65535 (known as ephemera
 a.	This allows my EC2 instance to communicate with services that are necessary for AWS SSM to function. AWS SSM is the most secure method to connect to an EC2 instance and also allows for a variety of other features.
 
 b.	Enabled private DNS names for the endpoints so all traffic destined for SSM stay within the VPC.
+
+c.	9/30/2026: VPC endpoints have been running at a significant cost of roughly ~40 USD a month, draining out my free tier credits. Deleted VPC endpoints for now.
