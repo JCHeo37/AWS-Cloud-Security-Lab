@@ -24,3 +24,10 @@ a.	Log file validation allows CloudTrail to determine if logs were modified usin
 a.	Allowed CloudTrail to log read and write activity performed on AWS resources.
 
 b.	Insight events allow logging for errors.
+### 12. CloudTrail Test with an IAM Policy Attachment and Removal Event
+a.	Created an IAM cloudtrail-test user, attached EC2ReadOnly managed policy, then immediately removed the policy from the user.
+
+b.	Opened CloudTrail and recorded the event principal, source IP, API name, affected resource, timestamps, event ID:
+
+c.	The IAM policy attachment was expected and authorized for CloudTrail validation. The actor, source IP, target user, policy ARN, and timestamps matched the documented test. The subsequent removal event and IAM permission review confirmed the temporary permission was removed.
+<img width="1266" height="152" alt="image" src="https://github.com/user-attachments/assets/f1f1b5b1-4faa-4d6d-90ad-f2201a2adc2b" />
