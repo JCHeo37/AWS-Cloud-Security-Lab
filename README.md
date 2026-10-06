@@ -50,7 +50,45 @@ As mentioned, this lab is a part of a greater whole that will combine 2 endpoint
 5. Document containment and remediation actions.
 
 ### Evidence
-[IN PROGRESS]
+Action observed:
+Flash-Admin attached the AWS managed policy AmazonEC2ReadOnlyAccess
+to IAM user cloudtrail-test in the Flash-Admin account.
+
+Timestamp:
+2026-10-06T21:57:40Z (UTC)
+
+Principal:
+arn:aws:iam::{ARN}:user/Flash-Admin
+
+Source IP:
+{Public home IP}
+
+API / service:
+AttachUserPolicy / iam.amazonaws.com
+
+Affected resource:
+IAM user cloudtrail-test
+
+Policy:
+arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess
+
+Event ID:
+074fc7e9-943a-4ac7-a90e-814b6ad7ded4
+
+Authentication context:
+MFA session attribute was true.
+The record indicates credentials originating from the console.
+
+Assessment:
+Consistent with the planned IAM policy-attachment test.
+Final classification as expected authorized activity requires
+confirmation of the actor, source IP, target, and test time window.
+
+Containment / Remediation:
+Flash-Admin detached the temporary policy at 2026-10-06T21:58:21Z. JSON records retained.
+<img width="1266" height="152" alt="image" src="https://github.com/user-attachments/assets/5ca2056c-e7af-4215-b1dd-9442392855aa" />
+
+
 ## Lessons Learned
 - Why SSM reduces remote-access exposure compared with open SSH
 - How CloudTrail supports attribution and incident timelines
