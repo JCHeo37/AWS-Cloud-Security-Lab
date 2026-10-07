@@ -23,16 +23,16 @@ As mentioned, this lab is a part of a greater whole that will combine 2 endpoint
 <img width="909" height="848" alt="image" src="https://github.com/user-attachments/assets/53f1603f-46e8-4b77-8f97-f621e7e27713" />
 
 ## AWS Services Used
-| Service | Purpose |
-|---|---|
-| IAM | Administrative access, least-privilege policies, roles, MFA |
-| VPC | Isolated cloud network, routing, security groups |
-| EC2 | Linux cloud test workload |
-| S3 | Private CloudTrail log storage |
-| CloudTrail | AWS API activity logging and investigation evidence |
-| CloudWatch | Metrics, logs, and alarms |
-| SNS | Security and budget notifications |
-| AWS Budgets | Cost threshold alerts |
+| Service | Purpose | My Documentation
+|---|---|---|
+| IAM | Administrative access, least-privilege policies, roles, MFA | [Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/02-iam.md)
+| VPC | Isolated cloud network, routing, security groups | [Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/04-vpc.md)
+| EC2 | Linux cloud test workload | [Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/05-ec2.md)
+| S3 | Private CloudTrail log storage | [Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/06-s3%2Bcloudtrail.md)
+| CloudTrail | AWS API activity logging and investigation evidence | [Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/06-s3%2Bcloudtrail.md)
+| CloudWatch | Metrics, logs, and alarms | [Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/03-cloudwatch%2Bbudgets%2Bsns.md)
+| SNS | Security and budget notifications |[Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/03-cloudwatch%2Bbudgets%2Bsns.md)
+| AWS Budgets | Cost threshold alerts |[Doc](https://github.com/JCHeo37/AWS-Cloud-Security-Lab/blob/main/documentation/03-cloudwatch%2Bbudgets%2Bsns.md)
 ## Security Controls Implemented
 - MFA enabled for privileged account access
 - Root account not used for daily administration
