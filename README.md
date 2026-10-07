@@ -20,7 +20,8 @@ As mentioned, this lab is a part of a greater whole that will combine 2 endpoint
 - Control laboratory spending with AWS Budgets
 - Investigate simulated cloud security events
 ## Architecture
-[IN PROGRESS]
+<img width="909" height="848" alt="image" src="https://github.com/user-attachments/assets/53f1603f-46e8-4b77-8f97-f621e7e27713" />
+
 ## AWS Services Used
 | Service | Purpose |
 |---|---|
